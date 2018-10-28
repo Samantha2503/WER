@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VJCC VERSION="1" NAME="GYROSCOPE" TYPE="7" ID="6.0">
+<VJCC TYPE="7" NAME="GYROSCOPE" VERSION="1" ID="6.0">
     <Catalog GLOBALVAL="VJC6.0">
-        <VAR NAME="gyro_1" INDEX="1" ID="4"/>
+        <VAR NAME="gyro_1" ID="4" INDEX="1"/>
     </Catalog>
     <Catalog GLOBALTREE="VJC6.0">
-        <Catalog SUBCOUNT="1" SCENEWIDTH="14400" SCENEHEIGHT="9000" MAIN="VJC6.0" ROTX="6625">
+        <Catalog SUBCOUNT="1" MAIN="VJC6.0" SCENEWIDTH="14400" ROTX="6662" SCENEHEIGHT="9000">
             <BLOCK ID="11"/>
-            <POS Y="4343" X="6625"/>
+            <POS X="6662" Y="4404"/>
             <VAL>
                 <NAME ID="Sub1"/>
                 <INDEX ID="1"/>
             </VAL>
         </Catalog>
-        <SUBPROGRAM NAME="Sub1" Y="4373" TYPE="1" ID="1" X="6889">
+        <SUBPROGRAM TYPE="1" NAME="Sub1" X="6889" Y="4373" ID="1">
             <BLOCK ID="5"/>
-            <POS Y="4459" X="6889"/>
+            <POS X="6889" Y="4459"/>
             <VAL>
                 <LOOPTIMES ID="0"/>
                 <FOREVERLOOP ID="true"/>
             </VAL>
             <CHILD ID="STEPNEXT">
                 <BLOCK ID="30"/>
-                <POS Y="4556" X="6889"/>
+                <POS X="6889" Y="4556"/>
                 <VAL>
                     <GETVAL ID="Ac_1"/>
                     <GETAXIS ID="2"/>
@@ -29,33 +29,33 @@
                 </VAL>
                 <CHILD ID="NEXT">
                     <BLOCK ID="1"/>
-                    <POS Y="4642" X="6889"/>
+                    <POS X="6889" Y="4642"/>
                     <VAL>
                         <CONDITION ID="(gyro_1 >= 80.00)&amp;&amp;(gyro_1 &lt;= 100.00)"/>
                     </VAL>
                     <CHILD ID="LEFT">
                         <BLOCK ID="25"/>
-                        <POS Y="4707" X="6776"/>
+                        <POS X="6776" Y="4707"/>
                         <VAL>
                             <MOTORPARAMETER ID="0,0,0,0,0"/>
                             <CURRENTPORT ID="0"/>
                         </VAL>
                         <CHILD ID="NEXT">
                             <BLOCK ID="7"/>
-                            <POS Y="4794" X="6776"/>
+                            <POS X="6776" Y="4794"/>
                             <VAL/>
                         </CHILD>
                     </CHILD>
                     <CHILD ID="RIGHT">
                         <BLOCK ID="25"/>
-                        <POS Y="4707" X="7001"/>
+                        <POS X="7001" Y="4707"/>
                         <VAL>
                             <MOTORPARAMETER ID="0,0,0,0,-50"/>
-                            <CURRENTPORT ID="3"/>
+                            <CURRENTPORT ID="0"/>
                         </VAL>
                         <CHILD ID="NEXT">
                             <BLOCK ID="17"/>
-                            <POS Y="4794" X="7001"/>
+                            <POS X="7001" Y="4794"/>
                             <VAL>
                                 <DISPLAYTYPE ID="0"/>
                                 <DISPLAYINDEX ID="0"/>
@@ -81,5 +81,5 @@
         <Catalog Var="VJC6.0"/>
         <Catalog BaseBlock="VJC6.0"/>
     </Catalog>
-    <Catalog SIZE="10"/>
+    <Catalog SIZE="7"/>
 </VJCC>
